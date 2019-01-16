@@ -19,5 +19,14 @@ def get_board_combo(board, combo)
   combo.map{|x| board[x]}
 end
 def won?(board)
-  return false
+  wins = WIN_COMBINATIONS.map do |win_i|
+    to_test = win_i.map {|x| board[x]}
+    if to_test == ['X','X','X'] || ['O','O','O']
+      return win_i
+    end
+  if wins.length != 1 
+    return false
+  else
+    return wins
+  end
 end
