@@ -23,4 +23,5 @@ def won?(board)
     z = combo[2]
     return [board[x],board[y],board[z]].all?{|i| i == "X" || "O"}
   end
+  return FALSE
 end
