@@ -28,11 +28,11 @@ def won?(board)
     else
       return
     end
-  end 
+  end
+  binding.pry
   if wins.length != 1 
     return false
   else
     return wins[0]
   end
 end
-binding.pry
