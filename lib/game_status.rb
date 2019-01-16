@@ -17,4 +17,5 @@ WIN_COMBINATIONS = [
   ]
   
 def won?(board)
-  WIN_COMBINATIONS.include 
+  WIN_COMBINATIONS.each do |combo|
+    board[combo[0],combo[1],combo[2]]
