@@ -23,6 +23,8 @@ def won?(board)
     to_test = win_i.map {|x| board[x]}
     if to_test == ['X','X','X'] || ['O','O','O']
       return win_i
+    else
+      return
     end
   end 
   if wins.length != 1 
