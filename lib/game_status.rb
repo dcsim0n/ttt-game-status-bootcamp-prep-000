@@ -15,7 +15,8 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
   ]
-  
+def get_board_combo(board, combo)
+  [board[combo]]
 def won?(board)
   
   WIN_COMBINATIONS.each do |combo|
