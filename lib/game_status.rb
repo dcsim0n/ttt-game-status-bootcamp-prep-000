@@ -24,5 +24,5 @@ def won?(board)
     board_combo = get_board_combo[board, win_combo]
     board_combo == ['X','X','X'] || ['O','O','O']
   end
-  
+  binding.pry
 end
