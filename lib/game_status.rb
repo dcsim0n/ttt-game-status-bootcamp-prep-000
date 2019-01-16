@@ -21,4 +21,6 @@ def won?(board)
     x = combo[0]
     y = combo[1]
     z = combo[2]
-    [board[x],board[y],board[z]].all 
+    return [board[x],board[y],board[z]].all("X" || "O")
+  end
+end
