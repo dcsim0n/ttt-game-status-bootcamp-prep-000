@@ -28,6 +28,6 @@ def won?(board)
   if wins.length != 1 
     return false
   else
-    return wins
+    return wins[0]
   end
 end
