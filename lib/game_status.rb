@@ -22,7 +22,7 @@ def won?(board)
   
   WIN_COMBINATIONS.each do |combo|
     combos = get_board_combo[board, combo]
-    if combos.all? {|x| x== 'X' || 'O'}
+    if combos.all? {|x| x == ' X ' || ' O '}
       return combo
     end
   end
