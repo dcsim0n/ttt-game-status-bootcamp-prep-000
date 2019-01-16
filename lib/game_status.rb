@@ -19,5 +19,5 @@ def get_board_combo(board, combo)
   combo.map{|x| board[x]}
 end
 def won?(board)
-  return nil
+  return false
 end
