@@ -18,4 +18,7 @@ WIN_COMBINATIONS = [
   
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
-    board[combo[0],combo[1],combo[2]]
+    x = combo[0]
+    y = combo[1]
+    z = combo[2]
+    [board[x],board[y],board[z]].all 
