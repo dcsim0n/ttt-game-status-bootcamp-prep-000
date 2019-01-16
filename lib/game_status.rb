@@ -24,6 +24,7 @@ def won?(board)
     if to_test == ['X','X','X'] || ['O','O','O']
       return win_i
     end
+  end 
   if wins.length != 1 
     return false
   else
