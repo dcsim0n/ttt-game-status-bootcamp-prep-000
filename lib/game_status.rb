@@ -20,7 +20,7 @@ def get_board_combo(board, combo)
   combo.map{|x| board[x]}
 end
 def won?(board)
-  binding.pry
+  
   wins = WIN_COMBINATIONS.map do |win_i|
     to_test = win_i.map {|x| board[x]}
     if to_test == ['X','X','X'] || ['O','O','O']
@@ -35,3 +35,4 @@ def won?(board)
     return wins[0]
   end
 end
+binding.pry
