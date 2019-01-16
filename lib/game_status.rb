@@ -24,9 +24,7 @@ def won?(board)
   wins = WIN_COMBINATIONS.map do |win_i|
     to_test = win_i.map {|x| board[x]}
     if to_test == ['X','X','X'] || ['O','O','O']
-      return win_i
-    else
-      return
+      win_i
     end
   end
   binding.pry
